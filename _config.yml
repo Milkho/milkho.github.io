@@ -1,0 +1,58 @@
+# Site settings
+title: milkho
+url: "http://milkho.github.io"    
+baseurl: ""
+
+description: 
+
+# Your information
+email: michael.khoroshun@gmail.com
+author: Mike Khoroshun
+avatar: "https://avatars0.githubusercontent.com/u/22458264?s=460&v=4"
+profile: 
+#twitter_username: twitter_username
+github_username:  milkho
+profile_links:
+  Email: "mailto:michael.khoroshun@gmail.comm"
+  GitHub: "https://github.com/milkho"
+
+
+# Comment Service (Disqus or 多说)
+#  choose one and un-comment the line to active it
+#disqus_shortname: xxx   # get one: https://disqus.com/admin/signup/
+#duoshuo_shortname: xxx  # get one: http://duoshuo.com/create-site/
+
+excerpt_separator: <!--more-->
+
+header:
+  links:             # Links on the header. Link to in-site page with a slash as prefix
+    About: /about/
+    Category: /category/
+
+
+permalink: /archivers/:title
+plugins:
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
+
+# Build settings
+paginate: 5
+paginate_path: "page:num"
+
+highlighter: rouge
+markdown: kramdown
+
+# https://jekyllrb.com/docs/configuration/#precedence
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  math_engine: mathjax
